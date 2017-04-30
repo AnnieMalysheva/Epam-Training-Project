@@ -141,8 +141,7 @@ div.image-logo {
 }
 
 a.odm {
-    /*noinspection CssNoGenericFontName*/
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
     color: #7be7f8;
     text-transform: uppercase;
