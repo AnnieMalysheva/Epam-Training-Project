@@ -134,6 +134,20 @@ div.header-logo {
     background-color: #454446;
 }
 
+div.image-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a.odm {
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'Oswald';
+    font-size: 18px;
+    color: #7be7f8;
+    text-transform: uppercase;
+}
+
 /*search field*/
 div.search {
     display: flex;

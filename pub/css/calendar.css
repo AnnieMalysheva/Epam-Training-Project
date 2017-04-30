@@ -1,0 +1,69 @@
+table.calendar-table {
+    /*width: 919px;*/
+    padding: 0 10px 8px 10px;
+}
+
+table.calendar-table thead {
+    width: 100%;
+    height: 27px;
+    background-color: #666666;
+    padding: 6px 0 6px 20px;
+}
+
+table.calendar-table span.table-heading {
+    text-transform: uppercase;
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'Oswald';
+    font-size: 12px;
+    color: #feffff;
+    padding-left: 10px;
+}
+
+table.calendar-table td {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+}
+
+tr.week-days td {
+    height: 25px;
+    border: none;
+    padding-left: 14px;
+    color: #666666;
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'Source Code Pro';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+table.calendar-table a:before {
+    font-size: 20px;
+    color: #feffff;
+}
+
+table.calendar-table a.prev:before {
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'FontAwesome';
+    content: '\f0a8 '; /*prev*/
+}
+
+table.calendar-table a.next:before {
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'FontAwesome';
+    content: '\f0a9 '; /*next*/
+}
+
+table.calendar-table td.day {
+    position: relative;
+}
+
+td.day span {
+    position: absolute;
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'Source Code Pro';
+    font-size: 14px;
+    color: #454446;
+    top: 0;
+    padding: 3px;
+}
