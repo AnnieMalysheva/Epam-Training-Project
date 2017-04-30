@@ -1,0 +1,55 @@
+/*header 1.1*/
+div.sharepoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #36c3d8;
+}
+
+div.sharepoint-logo {
+    flex-grow: 1;
+}
+
+div.sharepoint ul {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.horizontal-list li {
+    display: inline;
+    padding: 0 10px;
+}
+
+div.account {
+    padding: 7px 10px;
+    background-color: #efefef;
+}
+
+div.account a {
+    color: #454446;
+}
+
+div.account a.btn-user:after {
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'FontAwesome';
+    content: '\f0d7'; /*user-caret*/
+    padding-left: 16px;
+}
+
+div.account a.btn-options:after {
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'FontAwesome';
+    content: '\f013'; /*options*/
+    padding-left: 10px;
+}
+
+div.account a.btn-help:after {
+    /*noinspection CssNoGenericFontName*/
+    font-family: 'FontAwesome';
+    content: '\f059'; /*help*/
+    padding-left: 10px;
+}
+
