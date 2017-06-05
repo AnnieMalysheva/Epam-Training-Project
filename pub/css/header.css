@@ -2,17 +2,34 @@
 div.sharepoint {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    /*align-items: center;*/
     background-color: #36c3d8;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
 }
 
 div.sharepoint-logo {
     flex-grow: 1;
+    align-self: center;
+    padding-left: 22px;
+}
+
+div.sharepoint-logo img {
+    vertical-align: middle;
+}
+
+a.share-point-logo-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+.share-point-logo-link {
+    text-transform: uppercase;
 }
 
 div.sharepoint ul {
-    display: table;
     list-style-type: none;
     margin: 0;
     padding: 0 30px 0 0;
@@ -24,13 +41,15 @@ div.horizontal-list li {
 }
 
 div.account {
-    padding: 7px 20px 7px 20px;
+    min-width: 200px;
+    margin: 0;
+    padding: 0 18px 0 22px;
     background-color: #efefef;
 }
 
 div.account a {
     color: #454446;
-    padding: 6px;
+    padding: 0 6px;
 }
 
 div.account a:hover {
@@ -64,6 +83,7 @@ div.sharepoint-links {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    line-height: 32px;
     background-color: #efefef;
     padding: 0;
 }
@@ -72,7 +92,7 @@ div.sharepoint-links ul {
     display: table;
     list-style-type: none;
     margin: 0;
-    padding: 7px 20px 7px 0;
+    padding: 0 18px 0 10px;
 }
 
 div.sharepoint-links li {
@@ -129,15 +149,15 @@ div.header-logo {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    line-height: 62px;
     margin: 0;
     padding: 0;
     background-color: #454446;
 }
 
-div.image-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+div.image-logo img {
+    vertical-align: middle;
+    padding: 0 10px 0 20px;
 }
 
 a.odm {
@@ -145,11 +165,13 @@ a.odm {
     font-size: 18px;
     color: #7be7f8;
     text-transform: uppercase;
+    padding: 0 10px;
 }
 
 /*search field*/
 div.search {
     display: flex;
+    flex-direction: column;
     margin-right: 10px;
     position: relative;
 }
@@ -163,9 +185,11 @@ div.search i.fa {
 
 #searchInput {
     width: 40px;
-    padding: 10px 10px 10px 30px;
+    height: 40px;
+    padding-right: 30px;
     background-color: #454446;
     border: 1px solid #454446;
+    box-sizing: border-box;
     outline: none;
     cursor: pointer;
     border-radius: 20px;
@@ -174,6 +198,7 @@ div.search i.fa {
 
 #searchInput:focus {
     width: 300px;
+    padding-left: 30px;
     cursor: auto;
     background-color: #ffffff;
 }

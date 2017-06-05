@@ -1,12 +1,12 @@
 div#control {
-    display: flex;
+    /*display: flex;*/
     flex: 1;
+    /*width: 200px;*/
 }
 
 table.control-table {
     display: flex;
     flex-direction: column;
-    width: auto;
     margin: 15px 0 0 15px;
     border: 1px solid #e7e7e7;
     border-collapse: collapse;
@@ -24,6 +24,7 @@ table.control-table span {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     color: #feffff;
+
 }
 
 table.control-table span:before {

@@ -1,4 +1,4 @@
-nav {
+nav.menu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -7,14 +7,14 @@ nav {
     background-color: #39c2d7;
 }
 
-nav ul.menu {
+nav.menu ul {
     display: table;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav li {
+nav.menu li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,61 +23,61 @@ nav li {
     border-bottom: 1px solid #5ecbdc;
 }
 
-nav a {
+nav.menu a {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-nav li:hover {
+nav.menu li:hover {
     background-color: #31a5b7;
 }
 
-nav a:before {
+nav.menu a:before {
     font-size: 22px;
     padding-left: 30px;
     padding-right: 20px;
 }
 
 /*before icons*/
-nav a.menu-home:before {
+nav.menu a.menu-home:before {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f015'; /*home*/
 }
 
-nav a.menu-documents:before {
+nav.menu a.menu-documents:before {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f0f6'; /*documents*/
 }
 
-nav a.menu-calendar:before {
+nav.menu a.menu-calendar:before {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f073'; /*calendar*/
 }
 
-nav a.menu-archive:before {
+nav.menu a.menu-archive:before {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f187'; /*archive*/
 }
 
-nav a.menu-nomenclature:before {
+nav.menu a.menu-nomenclature:before {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f03a'; /*nomenclature*/
 }
 
-nav a.menu-organizations:before {
+nav.menu a.menu-organizations:before {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f0f2'; /*organizations*/
 }
 
 /*after icons*/
-nav a.menu-documents:after {
+nav.menu a.menu-documents:after {
     /*noinspection CssNoGenericFontName*/
     font-family: 'FontAwesome';
     content: '\f0d7'; /*documents-caret-down*/
