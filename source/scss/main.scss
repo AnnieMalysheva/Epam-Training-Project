@@ -3,12 +3,13 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 html {
+  height: 100%;
 
   body {
     margin: 0;
-    width: 100%; /*temporary*/
+    width: 100%;
     height: 100%;
-    //overflow: hidden;
+    overflow: hidden;
 
     a {
       text-decoration: none;
@@ -29,6 +30,7 @@ html {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          /*align-items: center;*/
           background-color: #36c3d8;
           line-height: 28px;
           margin: 0;
@@ -419,7 +421,20 @@ html {
                     border-left: 1px solid #e7e7e7;
                     box-sizing: border-box;
 
+                    .day-wrapper {
 
+                      .cell-letter {
+                        display: block;
+                        font-size: 70%;
+                        position: absolute;
+                        background: yellow;
+                        padding: 2px;
+                        width: 220px;
+                        z-index: 111;
+                        overflow: hidden;
+                        height: 12px;
+                      }
+                    }
                   }
                 }
               }
