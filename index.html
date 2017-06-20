@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Main</title>
     <link rel="stylesheet" href="source/scss/main.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="pub/js/Calendar.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -65,47 +67,12 @@
                     <li><a href="#" class="menu-organizations">organizations</a></li>
                 </ul>
             </nav>
-            <section>
-                <div id="calendar"></div>
+            <section id="vueapp-1">
 
-                <div id="control">
-                    <table class="control-table">
-                        <thead>
-                            <tr>
-                            <th colspan="3">
-                            <span>on control</span>
-                            </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="list-event odd">
-                                <td class="event-number"><a href="#">01-01</a></td>
-                                <td class="event-type"><a href="#">Letter</a></td>
-                                <td class="event-message"><a href="#">Whatever</a></td>
-                            </tr>
-                            <tr class="list-event">
-                                <td class="event-number"><a href="#">01-01</a></td>
-                                <td class="event-type"><a href="#">Letter</a></td>
-                                <td class="event-message"><a href="#">Whatever</a></td>
-                            </tr>
-                            <tr class="list-event odd">
-                                <td class="event-number">01-02</td>
-                                <td class="event-type">Request</td>
-                                <td class="event-message">Gimme Fuel</td>
-                            </tr>
-                            <tr class="list-event">
-                                <td class="event-number"><a href="#">01-01</a></td>
-                                <td class="event-type"><a href="#">Letter</a></td>
-                                <td class="event-message"><a href="#">Whatever</a></td>
-                            </tr>
-                            <tr class="list-event odd">
-                                <td class="event-number">01-02</td>
-                                <td class="event-type">Request</td>
-                                <td class="event-message">Gimme Fuel</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <calendar-grid></calendar-grid>
+
+                <control-panel></control-panel>
+
             </section>
         </div>
         <footer>
